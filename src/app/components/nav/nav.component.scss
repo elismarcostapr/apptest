@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+  width: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+.spacer {
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.expanded {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+}
+mat-panel-title {
+  font-size: 13pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+mat-sidenav {
+  z-index: 8;
+}

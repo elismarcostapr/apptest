@@ -1,0 +1,47 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="navigation" [mode]="over" [opened]="false">
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-accordion MatAccordionDisplayMode="flat">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header collapseHeight="40px" expandedHeight="40px">
+          <mat-panel-title>
+            Pessoas
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <a class="expanded" routerLink="/pessoas">Home</a>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion MatAccordionDisplayMode="flat">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header collapseHeight="40px" expandedHeight="40px">
+          <mat-panel-title>
+            Financeiro
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <a class="expanded" routerLink="/financeiro">Home</a>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion MatAccordionDisplayMode="flat">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header collapseHeight="40px" expandedHeight="40px">
+          <mat-panel-title>
+            Fiscal
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <a class="expanded" routerLink="/fiscal">Home</a>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span><a class="link" routerLink="/"> testflex</a></span>
+      <span class="spacer"><button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="logout()">
+          <mat-icon aria-label="Side nav toggle icon">logout</mat-icon>
+        </button></span>
+    </mat-toolbar>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
